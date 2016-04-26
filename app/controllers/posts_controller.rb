@@ -17,6 +17,16 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  # GET /posts/url
+  def new
+    @post = Post.url
+  end
+  
+  # GET /posts/author
+  def new
+    @post = Post.author
+  end
+  
   # GET /posts/1/edit
   def edit
   end
