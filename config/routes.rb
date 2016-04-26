@@ -1,19 +1,12 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-=======
   resources :posts
   root 'posts#index'
 
->>>>>>> 39e8dc1b1707b0335ff9f53b1ab9fac4a0cc1e1f
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-<<<<<<< HEAD
   # root 'welcome#index'
-=======
-  # root 'welcome#index'  
->>>>>>> 39e8dc1b1707b0335ff9f53b1ab9fac4a0cc1e1f
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
