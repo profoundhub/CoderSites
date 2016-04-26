@@ -18,12 +18,12 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/url
-  def new
+  def url
     @post = Post.url
   end
   
   # GET /posts/author
-  def new
+  def author
     @post = Post.author
   end
   
@@ -79,6 +79,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :author, :url)
     end
 end
