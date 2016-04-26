@@ -9,8 +9,18 @@
   </p>
   
   <p>
-    <strong>Body:</strong>
+    <strong>Description:</strong>
     <%= @post.body %>
+  </p>
+  
+  <p>
+    <strong>Author:</strong>
+    <%= @post.author %>
+  </p>
+  
+  <p>
+    <strong>Site URL:</strong>
+    <%= @post.URL %>
   </p>
   
   <%= link_to 'Edit', edit_post_path(@post) %> |
