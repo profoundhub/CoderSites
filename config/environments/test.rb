@@ -12,8 +12,13 @@ Rails.application.configure do
   # preloads Rails for running tests, you may have to set it to true.
   config.eager_load = false
 
+<<<<<<< HEAD
   # Configure static file server for tests with Cache-Control for performance.
   config.serve_static_files   = true
+=======
+  # Configure static asset server for tests with Cache-Control for performance.
+  config.serve_static_assets  = true
+>>>>>>> 39e8dc1b1707b0335ff9f53b1ab9fac4a0cc1e1f
   config.static_cache_control = 'public, max-age=3600'
 
   # Show full error reports and disable caching.
@@ -31,9 +36,12 @@ Rails.application.configure do
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
 
+<<<<<<< HEAD
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
 
+=======
+>>>>>>> 39e8dc1b1707b0335ff9f53b1ab9fac4a0cc1e1f
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
