@@ -2,7 +2,7 @@
 
 Welcome to CodeCamper Sites
 
-Things you may want to cover:
+Things to be covered:
 
 * Ruby version
 
