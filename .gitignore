@@ -19,7 +19,7 @@
 /.c9
 /.git
 /log
-
+.c9
 *.rbc
 capybara-*.html
 .rspec
