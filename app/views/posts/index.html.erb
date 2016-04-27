@@ -21,7 +21,7 @@
           <% @posts.each do |post| %>
             <tr>
               <td><%= post.title %></td>
-              <td><%= post.body %></td>
+              <td><%= post.description %></td>
               <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.url %></a></td>
               <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
             </tr>
