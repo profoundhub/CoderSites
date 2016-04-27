@@ -4,10 +4,15 @@ module DescriptionsHelper
     [
       'Tribute Page',
       'Personal Portfolio Webpage',
-      'Build a Random Quote Machine',
+      'Random Quote Machine',
       'Show the Local Weather',
-      'Build a Wikipedia Viewer',
-      'Use the Twitch.tv JSON API'
+      'Wikipedia Viewer',
+      'Twitch.tv JSON API',
+      'JavaScript Calculator',
+      'Pomodoro Clock',
+      'Tic Tac Toe Game',
+      'Simon Says Game',
+      'Other'
     ]
   end
 end
