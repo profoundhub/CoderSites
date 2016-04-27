@@ -1,30 +1,45 @@
-<div class="jumbotron">
-  <h1>CampSites Directory</h1>
+<div class="container-fluid">
+<header>
+  <div class="jumbotron">
+    <div class="page-header">
+      <h1>CampSites Directory</h1>
+    </div>  
+  </div>
+</header>  
+  <div class="row tableBackground">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th scope="row">Title</th>
+            <th scope="row">Description</th>
+            <th scope="row">URL</th>
+            <th scope="row">Author</th>
+            <th scope="row">Date</th>
+            <th colspan="5"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @posts.each do |post| %>
+            <tr>
+              <td><%= post.title %></td>
+              <td><%= post.body %></td>
+              <td><%= post.url %></td>
+              <td><%= post.author %></td>
+              <td><%= post.created_at.to_date %></td>
+              <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+          <%= link_to 'New Post', new_post_path, class: 'btn btn-primary bubbleWrap' %>
+        <br>
+      </div>
+    </div>
+    <br>
+  </div>
 </div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>URL</th>
-      <th>Author</th>
-      <th>Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= post.url %></td>
-        <td><%= post.author %></td>
-        <td><%= post.created_at.to_date %></td>
-        <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'New Post', new_post_path, class: 'btn btn-primary' %>
