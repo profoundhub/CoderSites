@@ -24,10 +24,9 @@
             <tr>
               <td><%= post.title %></td>
               <td><%= post.body %></td>
-              <td><%= post.url %></td>
-              <td><%= post.author %></td>
+              <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.url %></a></td>
+              <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
               <td><%= post.created_at.to_date %></td>
-              <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
             </tr>
           <% end %>
         </tbody>
