@@ -15,8 +15,6 @@
             <th scope="row">Description</th>
             <th scope="row">URL</th>
             <th scope="row">Author</th>
-            <th scope="row">Date</th>
-            <th colspan="5"></th>
           </tr>
         </thead>
         <tbody>
@@ -26,7 +24,6 @@
               <td><%= post.body %></td>
               <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.url %></a></td>
               <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
-              <td><%= post.created_at.to_date %></td>
             </tr>
           <% end %>
         </tbody>
