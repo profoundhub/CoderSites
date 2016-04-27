@@ -16,7 +16,7 @@
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="field form-group">
-    <%= f.label :Category %> <em>(Select One)</em><br>
+    <%= f.label :description %> <em>(Select One)</em><br>
     <%= f.select(:description, description_array.map { |value| [value, value] },
                  {}, class: 'form-control') %>
   </div>
