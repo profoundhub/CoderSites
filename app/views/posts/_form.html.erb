@@ -16,12 +16,12 @@
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="field form-group">
-    <%= f.label :description %> <em>(Select One)</em><br>
+    <%= f.label :description %> <em>(Select a Category)</em><br>
     <%= f.select(:description, description_array.map { |value| [value, value] },
                  {}, class: 'form-control') %>
   </div>
   <div class="field form-group">
-    <%= f.label :url %> <em>(Include the https://)</em><br>
+    <%= f.label :url %> <em>(Include the http:// OR https://)</em><br>
     <%= f.text_area :url, class: 'form-control' %>
   </div>
   <div class="field form-group">
