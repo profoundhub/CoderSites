@@ -16,23 +16,29 @@
 /log/*.log
 /tmp
 
+# Ignore Cloud9.
 /.c9
-/.git
-/log
 .c9
-*.rbc
-capybara-*.html
-.rspec
+
+# Ignore git.
+/.git
+
+# Ignore Logs.
 /log
-/tmp
+
+*.rbc
+.rspec
+
+# Ignore DB.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+
 /public/system
 /coverage/
 /spec/tmp
+
 **.orig
 rerun.txt
-pickle-email-*.html
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
