@@ -24,3 +24,14 @@
     }
     .bubbleWrap {margin: 25px;}
     .aboutThumbs{max-width:64px; max-length:64px;}
+
+    @media screen and (max-width: 768px) {
+        .lead {
+            font-size: 36px !important;
+        }
+    }
+    @media screen and (max-width: 568px) {
+        h1 {
+        font-size: 60px;
+        }
+    }
