@@ -13,16 +13,14 @@
           <tr>
             <th scope="row">Title</th>
             <th scope="row">Category (Select One)</th>
-            <th scope="row">URL</th>
             <th scope="row">Author</th>
           </tr>
         </thead>
         <tbody>
           <% @posts.each do |post| %>
             <tr>
-              <td><%= post.title %></td>
+              <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.title %></a></td>
               <td><%= post.description %></td>
-              <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.url %></a></td>
               <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
             </tr>
           <% end %>
