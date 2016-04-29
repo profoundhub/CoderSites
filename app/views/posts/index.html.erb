@@ -9,40 +9,44 @@
   </header>  
   
   <section>
-    <div class="row tableBackground">
-      
-      <div class="table-responsive">
-        <table class="table table-bordered table-striped">
-          <thead class="thead-inverse">
-            <tr>
-              <th scope="row">Title</th>
-              <th scope="row">Category</th>
-              <th scope="row">Author</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @posts.each do |post| %>
+    <article>
+      <div class="row tableBackground">
+        
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-inverse">
               <tr>
-                <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.title %></a></td>
-                <td><%= post.description %></td>
-                <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
+                <th scope="row">Title</th>
+                <th scope="row">Category</th>
+                <th scope="row">Author</th>
               </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div><!-- div table-responsive -->
-      
-      <br>
-      
-      <div class="row">
-        <div class="col-md-2 col-md-offset-5">
-            <%= link_to 'Add New CampSite', new_post_path, class: 'btn btn-primary bubbleWrap' %>
-          <br>
-        </div>
-      </div>
-      
-      <br>
-      
-    </div><!-- div row tableBackground -->
+            </thead>
+            <tbody>
+              <% @posts.each do |post| %>
+                <tr>
+                  <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.title %></a></td>
+                  <td><%= post.description %></td>
+                  <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div><!-- div table-responsive -->
+        
+        <br>
+        
+        <aside>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <%= link_to 'Add New CampSite', new_post_path, class: 'btn btn-primary bubbleWrap' %>
+              <br>
+            </div>
+          </div>
+        </aside>
+        
+        <br>
+        
+      </div><!-- div row tableBackground -->
+    </article><!-- article -->
   <section><!-- section -->
 </div><!-- container-fluid -->
