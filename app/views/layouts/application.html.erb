@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Code Camp Sites</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <%= stylesheet_link_tag "custom" %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Code Camp Sites</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+    <%= stylesheet_link_tag "custom" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+    <%= csrf_meta_tags %>
+  </head>
   
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class='container'>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%= link_to root_path, class: 'navbar-brand' do %>
-          <i class="fa fa-users"></i>
-            Code Camp Sites
-        <% end %>
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path, class: 'navbar-brand' do %>
+            <i class="fa fa-users"></i>
+              Code Camp Sites
+          <% end %>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Add", new_post_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Contact", '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
       </div>
-      <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Add", new_post_path %></li>
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Contact", '#' %></li>
-          <li><%= link_to "Log in", '#' %></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
+    </nav>
+    
+    <div class="container">
+      <%= yield %>
     </div>
-  </nav>
   
-  <div class="container">
-    <%= yield %>
-  </div>
-
-</body>
+  </body>
 </html>
