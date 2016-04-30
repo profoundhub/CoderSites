@@ -10,7 +10,14 @@
     <%= csrf_meta_tags %>
   </head>
   
-  <body>
+  
+  <body ng-app="ziplineFcc2App">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
     
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class='container'>
@@ -41,14 +48,23 @@
       <%= yield %>
     </div>
   
+  <br>
+    <hr>
+  <br>
+  
   	<footer>
-		  <p class="text-center">Copyright 
-		    <script>
-          document.write(new Date().getFullYear());
-        </script>
-         Coder Camp Sites Directory
+		  <p class="text-center">Copyright <%= Time.now.year %> Coder Camp Sites Directory
       </p>
 	  </footer>
 	  
+  <br>
+    <hr>
+  <br>
+	  <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+	  <script src="/assets/fcczips.app.js"></script>
+	  <script src="/assets/vendor.apps.js"></script>
   </body>
 </html>
