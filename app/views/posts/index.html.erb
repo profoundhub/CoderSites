@@ -25,7 +25,7 @@
               <tbody>
                 <% @posts.each do |post| %>
                   <tr>
-                    <td><a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.title %></a></td>
+                    <td>  <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <a href="<%= post.url %>" targer="_blank" rel="muse nofollow external"><%= post.title %></a></td>
                     <td><%= post.description %></td>
                     <td><a href="https://www.freecodecamp.com/<%= post.author %>" rel="muse nofollow external"><%= post.author %></a></td>
                   </tr>
