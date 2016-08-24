@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Code Camp Sites</title>
+    <title>Free Code Camp Sites Directory</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <%= stylesheet_link_tag "custom" %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,7 +9,6 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
     <%= csrf_meta_tags %>
   </head>
-  
   
   <body ng-app="ziplineFcc2App">
     <!--[if lt IE 7]>
@@ -23,7 +22,7 @@
       <div class='container'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -47,23 +46,19 @@
     <div class="container">
       <%= yield %>
     </div>
-  
-  <br>
-    <hr>
-  <br>
+      <hr>
+    <br>
   
   	<footer>
-		  <p class="text-center">Copyright <%= Time.now.year %> Coder Camp Sites Directory
-      </p>
+		  <p class="text-center">Copyright <%= Time.now.year %> FCC Code Camp Sites Directory</p>
+      <p class="text-center"><a href="http://profoundideation.com/2016/" style="color: #CCC !important;" rel="_blank">[Profound Ideation Inc.] Digital Marketing Agency</a></p>
 	  </footer>
 	  
-  <br>
-    <hr>
-  <br>
 	  <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    
 	  <script src="/assets/fcczips.app.js"></script>
 	  <script src="/assets/vendor.apps.js"></script>
   </body>
